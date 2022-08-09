@@ -1,0 +1,91 @@
+<!-- 크롬 -->
+<!DOCTYPE hTml>
+<html>
+<head>
+	<title>컴퓨터학과 2학년 시간표</title>
+	<style>
+	caption {
+		font-size: 20px;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	td{
+		width: 100px;
+		text-align: center;
+	}
+	td.yellow{
+		background-color: #FFE08C;
+	}
+	td.blue{
+		background-color: #B2CCFF; 
+	}
+	td.gray{
+		background-color: #BDBDBD;
+	}
+	tr{
+		height: 60px;
+	}
+	
+	</style>
+</head>
+<body>
+	<div align="center">
+		<table border="1px">
+			<caption>강의 시간표</caption>
+			<tr>
+				<td>2학년</td>
+				<td>월</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td></td>
+				<td rowspan= "2" class= yellow>자료구조</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td rowspan= "2" class= yellow>데이터베이스 개론</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td rowspan= "2" class= blue>웹프로그래밍</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td></td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

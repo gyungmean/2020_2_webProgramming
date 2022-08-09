@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\user\Desktop\2020-2학기\웹프로그래밍\week12\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3646420218.index
+1530039024.index
+562815703.index
+968084374.index
+2015161403.index
+1802140431.index
+2438009823.index

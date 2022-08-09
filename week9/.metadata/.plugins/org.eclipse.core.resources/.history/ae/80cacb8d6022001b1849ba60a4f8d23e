@@ -1,0 +1,25 @@
+<%--컴퓨터학과 20190941 김경민 --%>
+<%--최적 실행화면 : Chrome browser --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Practice 04</title>
+</head>
+<body>
+<%@ page import = "java.util.Enumeration" %>
+<%
+out.println(request.getParameter(src));
+out.println("<br>page_control_04.jsp에서 출력합니다.");
+out.println("<hr>");
+out.println("념겨받은 파라미터들<br>");
+Enumeration<String> e = request.getParameterNames();
+while(e.hasMoreElements()){
+	String s = e.nextElement();
+	out.println(s + ":" + request.getParameter(s) + "<br>");
+}
+%>
+</body>
+</html>

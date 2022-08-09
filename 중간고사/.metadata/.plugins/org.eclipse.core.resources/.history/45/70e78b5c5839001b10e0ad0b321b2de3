@@ -1,0 +1,26 @@
+<!-- 컴퓨터학과 20190941 김경민 -->
+<!-- 최적 실행화면 : Chrome browser -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>register.jsp</title>
+</head>
+<jsp:useBean id="login" class="jspbook.pr33.LoginBean" scope="page"/>
+<jsp:setProperty name="login" property="*"/>
+<body>
+<h2>등록내용</h2>
+이름 :<br>
+패스워드:<br>
+이메일:<br>
+성별:<br>
+생일:<br>
+<hr>
+씨는 이고,
+<%
+
+%>
+</body>
+</html>

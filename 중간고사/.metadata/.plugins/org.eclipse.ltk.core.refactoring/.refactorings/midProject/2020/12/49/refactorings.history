@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Problem01.AddrManger&apos; to &apos;AddrManager&apos;&#x0D;&#x0A;- Original project: &apos;midProject&apos;&#x0D;&#x0A;- Original element: &apos;Problem01.AddrManger&apos;&#x0D;&#x0A;- Renamed element: &apos;Problem01.AddrManager&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AddrManger&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Problem01{AddrManger.java[AddrManger" matchStrategy="1" name="AddrManager" qualified="false" references="true" similarDeclarations="false" stamp="1606914826392" textual="false" version="1.0"/>
+</session>

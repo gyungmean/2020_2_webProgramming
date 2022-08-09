@@ -1,0 +1,88 @@
+<!-- 크롬 -->
+<!DOCTYPE hTml>
+<html>
+<head>
+	<title>컴퓨터학과 2학년 시간표</title>
+	<style>
+	table{
+		border-collapse: collapse;
+	}
+	td{
+		width: 100px;
+		text-align: center;
+	}
+	td.yellow{
+		background-color: #FFE08C;
+	}
+	td.blue{
+		background-color: #B2CCFF; 
+	}
+	td.gray{
+		background-color: #BDBDBD;
+	}
+	tr{
+		height: 60px;
+	}
+	tr.title{
+		font-size: 20px;
+	}
+	
+	</style>
+</head>
+<body>
+	<div align="center">
+	<h3>강의 시간표</h3>
+		<table border="1px">
+			<tr class= title>
+				<td>2학년</td>
+				<td>월</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td></td>
+				<td rowspan= "2" class= yellow>자료구조</td>
+				<td class= yellow>네트워크</td>
+				<td></td>
+				<td class= yellow>네트워크</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td rowspan= "2" class= yellow>데이터베이스개론</td>
+				<td></td>
+				<td></td>
+				<td class= blue>운영체제</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+				<td class= blue>운영체제</td>
+				<td></td>
+				<td rowspan= "4">사회봉사</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td rowspan= "2" class= blue>웹프로그래밍</td>
+				<td class=gray>창의와 감성</td>
+				<td></td>
+				<td class=gray>창의와 감성</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td></td>
+				<td rowspan= "2" class= blue>소프트웨어프로그래밍</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<%--컴퓨터학과 20190941 김경민 --%>
+<%--최적 실행화면 : Chrome browser --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% response.sendRedirect("page_control_04.jsp?src=OK"); %>

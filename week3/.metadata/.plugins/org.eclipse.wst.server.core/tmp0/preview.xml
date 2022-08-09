@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="week3" name="week3" path="C:/Users/user/Desktop/2020-2학기/웹프로그래밍/week3/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/week3" type="static"/>
+</server>

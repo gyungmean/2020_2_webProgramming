@@ -1,0 +1,65 @@
+<%--컴퓨터학과 20190941 김경민 --%>
+<%--최적 실행화면 : Eclipse built-in --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>calendar.jsp</title>
+<style>
+	table.cal {
+		width: 270px;
+	    height: 200px;
+	    border: 1px solid black;
+	    border-collapse: collapse;
+  	}
+  	th.cal, td.cal {
+    	border: 1px solid black;
+    	text-align: center;
+    	font-weight: bold;
+  	}
+</style>
+</head>
+<body>
+<%@ page import="java.util.Calendar" %>
+<%!
+	public String parseDay(int cnt, String day){
+		if(day.equals("토")){
+			return "<font color=\"blue\">" + cnt + "</font>";
+		}
+		else if(day.equals("일")){
+			return "<font color=\"red\">" + cnt + "</font>";
+		}
+		return "<font color=\"black\">" + cnt + "</font>";
+	}
+%>
+<%
+	Calendar today = Calendar.getInstance();
+
+	int year = today.get(Calendar.YEAR);
+	int month = today.get(Calendar.MONTH) + 1;
+	Calendar cal = Calendar.getInstance();;
+	cal.set(year, month - 1, 1);
+	int date = today.get(Calendar.DATE);
+	
+	out.println("<h3>" + year + "-" + month + "-" + date + "</h3>");
+	
+	cal.set(year, month - 1, 1);
+	int day = cal.get(Calendar.DAY_OF_WEEK);
+	
+	int day_count = 0;
+	for(int i = 1; i < day; i++){
+		out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		day_count++;
+	}
+	
+	for(int i = 1; i <= cal.getActualMaximum(Calendar.DAY_OF_MONTH); i++){
+		if(day_count % 7 == 0){
+			out.println("<br>");
+		}
+		out.println(parseDay(i, day));
+		day_count++;
+	}
+%>
+</body>
+</html>

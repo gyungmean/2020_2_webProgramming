@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="week12.Practice32.*"%>
+<!DOCTYPE html>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<jsp:useBean id="addr" class="week12.Practice32.AddrBean" />
+<jsp:setProperty name="addr" property="*"/>
+<jsp:useBean id="am" class="week12.Practice32.AddrBeanAddrManger" scope="application"/>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주소록</title>
+</head>
+<body>
+
+</body>
+</html>

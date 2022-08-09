@@ -1,0 +1,43 @@
+<!-- 컴퓨터학과 20190941 김경민 크롬 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>이클래스 로그인</title>
+		<style>
+			td{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td colspan="2"><image src="image/eclass_title.jpg"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h1>로그인</h1>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td><image src="image/eclass_logo.png"></td>
+					<td>
+						<strong>회원님의 아이디와 비밀번호를 정확히 입력하세요.</strong>
+						<br>
+						<form name="frm1">
+						<select name="type">
+							<option value="1" selected>학부생</option>
+							<option value="2">대학원생</option>
+							<option value="3">교직원</option>
+						</select>
+						<br><strong>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <input type="text" name="id" style="background-color: #FFFF99;">
+						<br>
+						<br><strong>비밀번호&nbsp;&nbsp; </strong> <input type="password" name="pwd" style="background-color: #FFFF99;">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>

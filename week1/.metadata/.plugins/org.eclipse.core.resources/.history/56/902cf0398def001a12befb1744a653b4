@@ -1,0 +1,38 @@
+<!-- 크롬 -->
+<!DOCTYPE hTml>
+<html>
+<head>
+	<title>컴퓨터학과 2학년 시간표</title>
+	<style>
+	caption {
+		font-size: 20px;
+	}
+	table, tr{
+		border: 1px solid black;
+	}
+	td{
+		width: 80px;
+		text-align: center;
+	}
+	tr{
+		height: 80px;'
+	}
+	
+	</style>
+</head>
+<body>
+	<div align="center">
+		<table>
+			<caption>강의 시간표</caption>
+			<tr>
+				<td>2학년</td>
+				<td>월</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

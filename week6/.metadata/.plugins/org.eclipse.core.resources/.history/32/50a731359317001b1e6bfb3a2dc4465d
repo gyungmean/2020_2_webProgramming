@@ -1,0 +1,83 @@
+<%--컴퓨터학과 20190941 김경민 --%>
+<%--최적 실행화면 : Eclipse built-in --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>calendar.jsp</title>
+<style>
+	table.cal {
+		width: 270px;
+	    height: 200px;
+	    border: 1px solid black;
+	    border-collapse: collapse;
+  	}
+  	th.cal, td.cal {
+    	border: 1px solid black;
+    	text-align: center;
+    	font-weight: bold;
+  	}
+</style>
+</head>
+<body>
+<%@ page import="java.util.Calendar" %>
+<%!
+	public String parseDay(int cnt, String day){
+		if(day.equals("토")){
+			return "<font color=\"blue\">" + cnt + "</font>";
+		}
+		else if(day.equals("일")){
+			return "<font color=\"red\">" + cnt + "</font>";
+		}
+		return "<font color=\"black\">" + cnt + "</font>";
+	}
+%>
+<%
+	Calendar today = Calendar.getInstance();
+
+	int year = today.get(Calendar.YEAR);
+	int month = today.get(Calendar.MONTH) + 1;
+	Calendar cal = Calendar.getInstance();;
+	cal.set(year, month - 1, 1);
+	int date = today.get(Calendar.DATE);
+	
+	out.println("<h3>" + year + "-" + month + "-" + date + "</h3>");
+	
+	cal.set(year, month - 1, 1);
+	int day = cal.get(Calendar.DAY_OF_WEEK);
+	int day_count = 0;
+	String[] day_word = {"일", "월" , "화", "수", "목", "금", "토"};
+	
+	out.println("<div align=\"center\">");
+	out.println("<table class=\"cal\">");
+	out.println("<tr class=\"cal\">");
+		out.println("<td class=\"cal\"><font color=\"red\">일</font></td>");
+		out.println("<td class=\"cal\">월</td>");
+		out.println("<td class=\"cal\">화</td>");
+		out.println("<td class=\"cal\">수</td>");
+		out.println("<td class=\"cal\">목</td>");
+		out.println("<td class=\"cal\">금</td>");
+		out.println("<td class=\"cal\"><font color=\"blue\">토</font></td>");
+	out.println("</tr>");
+
+		out.println("<tr class=\"cal\">");
+		for(int j = 1; j < day; j++){
+			out.println("<td class=\"cal\">&nbsp;</td>");
+			day_count++;
+		}
+		for(int j = 1; j <= cal.getActualMaximum(Calendar.DAY_OF_MONTH); j++){
+			if(day_count % 7 == 0){
+				out.println("</tr>");
+				out.println("<tr class=\"cal\">");
+			}
+			out.println("<td class=\"cal\">"+ parseDay(j, "월") + "</td>");
+			day_count++;
+		}
+		out.println("</tr>");
+	out.println("</table>");
+	out.println("</div>");
+	
+%>
+</body>
+</html>

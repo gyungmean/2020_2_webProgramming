@@ -1,0 +1,72 @@
+<!-- 컴퓨터학과 20190941 김경민 크롬 -->
+<!DOCTYPE hTml>
+<html>
+	<head>
+		<title>회원 가입</title>
+		<style>
+			table{
+				border-collapse: collapse;
+			}
+			td.title{
+				background-color: #ECECEC;
+				font-weight: bold; 
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+		<form>
+		<table border="1px">
+			<tr>
+				<td colspan="2" class=title>회원 가입</td>
+			</tr>
+			<tr>
+				<td class= title>아이디</td>
+				<td><input type=text></td>
+			</tr>
+			<tr>
+				<td class= title>패스워드</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>성별</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>국적</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>휴대폰</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>이메일</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>생일</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>관심분야</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>가입인사</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class= title>증명사진</td>
+				<td></td>
+			</tr>
+			<tr>
+			 	<td colspan="2" class= title></td>
+			</tr>
+		
+		</table>
+		</form>
+		</div>
+	</body>
+</html>

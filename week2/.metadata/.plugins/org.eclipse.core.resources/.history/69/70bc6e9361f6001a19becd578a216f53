@@ -1,0 +1,91 @@
+<!-- 컴퓨터학과 20190941 김경민 크롬 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>회원 가입</title>
+		<style>
+			table{
+				border-collapse: collapse;
+			}
+			td.title{
+				background-color: #ECECEC;
+				font-weight: bold; 
+				text-align: center;
+			}
+			input.imageAlign{
+				vertical-align:middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+		<form>
+		<table border="1px">
+			<tr>
+				<td colspan="2" class=title>회원 가입</td>
+			</tr>
+			<tr>
+				<td class= title>아이디</td>
+				<td><input type="text"> <input type="image" src="image/check.gif" class="imageAlign"></td>
+			</tr>
+			<tr>
+				<td class= title>패스워드</td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td class= title>성별</td>
+				<td><input type="radio" name="gen" value="1">남 <input type="radio" name="gen" value="2" checked>여</td>
+			</tr>
+			<tr>
+				<td class= title>국적</td>
+				<td><input type="text" readonly value="대한민국"> <input type="button" value="국적변경"></td>
+			</tr>
+			<tr>
+				<td class= title>휴대폰</td>
+				<td>
+					 <select name="phone">
+						<option value="1" selected>010</option>
+						<option value="2">011</option>
+						<option value="3">017</option>
+						<option value="4">070</option>
+						<option value="5">080</option>
+					</select>
+					 - <input type="text" size="5px"> - <input type="text"> 
+				</td>
+			</tr>
+			<tr>
+				<td class= title>이메일</td>
+				<td><input type="text" size="40px"></td>
+			</tr>
+			<tr>
+				<td class= title>생일</td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td class= title>관심분야</td>
+				<td><input type="checkbox" name="interest">뉴스 
+				<input type="checkbox" name="interest" checked>맛집
+				<input type="checkbox" name="interest">책 
+				<input type="checkbox" name="interest">영화 
+				<input type="checkbox" name="interest">여행
+				</td>
+			</tr>
+			<tr>
+				<td class= title>가입인사</td>
+				<td><textarea cols="60px", rows="10px">회원들에게 간단한 가입인사를 남겨주세요</textarea></td>
+			</tr>
+			<tr>
+				<td class="title">증명사진</td>
+				<td><input type="file"></td>
+			</tr>
+			<tr>
+			 	<td colspan="2" class="title">
+			 	<input type="submit" value="가입하기"> <input type="reset" value="다시작성">
+			 	</td>
+			</tr>
+		
+		</table>
+		</form>
+		</div>
+	</body>
+</html>

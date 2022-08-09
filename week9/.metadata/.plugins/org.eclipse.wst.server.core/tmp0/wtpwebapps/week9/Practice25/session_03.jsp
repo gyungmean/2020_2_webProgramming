@@ -1,0 +1,18 @@
+<%--컴퓨터학과 20190941 김경민 --%>
+<%--최적 실행화면 : Chrome browser --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Session Object 03</title>
+</head>
+<body>
+<%
+	out.println("세션이 생성된 후 " + (session.getLastAccessedTime() - session.getCreationTime()) / 1000 + "초 지났습니다.");
+%>
+<%--세션 지속시간은 계속 변경된다 --%>
+</body>
+</html>

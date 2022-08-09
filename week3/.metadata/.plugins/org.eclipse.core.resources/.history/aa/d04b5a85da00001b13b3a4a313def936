@@ -1,0 +1,41 @@
+<!-- 컴퓨터학과 20190941 김경민 -->
+<!-- 최적 실행화면 :  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>계산기</title>
+	<style>
+		tr{
+			text-align: center;
+		}
+		
+		tr.blue{
+			background-color: #34CBFC;
+		}
+	</style>
+	<script type="text/javascript">
+			function calc() {
+				var exp = prompt('계산할 수식을 입력하세요');
+				if(exp == null){
+					return;
+				}
+				var result = eval(exp);
+				alert(result);
+			}
+		</script>
+</head>
+<body>
+	<table>
+		<tr class="blue">
+			<td colspan="2"><I>CalCuLaTor</I></td>
+		</tr>
+		<tr>
+			<td><img src="image/cal.jpg"></td>
+			<td><input type="button" value="계산하기" onClick="calc()"></td>
+		</tr>
+		<tr class="blue">
+			<td colspan="2"></td>
+		</tr>
+	</table>
+</body>
+</html>

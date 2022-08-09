@@ -1,0 +1,42 @@
+<!-- 컴퓨터학과 20190941 김경민 -->
+<!-- 최적 실행화면 : Chrome browser -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>가입완료</title>
+		<style>
+			td{
+				width: 600px;
+				text-align: center;
+			}
+			td.color{
+				background-color: #FFDAB9;
+				height: 40px;
+			}
+			td.image{
+				background-color:#FFEFD5;
+				height: 350px;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td><img src="image/eclass_title.jpg"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="color">정상적으로 가입되었습니다</td>
+				</tr>
+				<tr>
+					<td class="image">
+						<img src="image/flower.gif">
+						<br>가입을 축하합니다.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

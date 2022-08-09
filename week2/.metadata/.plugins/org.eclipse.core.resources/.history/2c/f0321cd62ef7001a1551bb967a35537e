@@ -1,0 +1,45 @@
+<!-- 컴퓨터학과 20190941 김경민 -->
+<!-- 최적 실행화면 : Chrome browser -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>회원가입</title>
+		<style>
+			td.center{
+				text-align: center;
+			}
+			td.color{
+				text-align: center;
+				background-color: #FFDAB9;
+				width: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td class="center"><img src="image/eclass_title.jpg"></td>
+				</tr>
+				<tr>
+					<td class="center">
+						<h1>회원가입</h1>
+					</td>
+				</tr>
+			</table>
+			<hr>
+			<table>
+				<form name="frm2">
+				<tr>
+					<td class="color"><strong>동의약관</strong></td>
+				</tr>
+				<tr>
+					<textarea></textarea>
+				</tr>
+				<tr>
+				</tr>
+				</form>
+			</table>
+		</div>
+	</body>
+</html>
